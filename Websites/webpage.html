@@ -22,13 +22,36 @@
       background: radial-gradient(ellipse at center, #151b22 0%, #0b0e12 70%);
     }
 
+    .site-notice {
+      margin: 0;
+      padding: 0.75rem 1.75rem;
+      background: #f5d742;
+      color: #17140a;
+      font-weight: 700;
+      text-align: center;
+    }
+
     header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
       padding: 1.25rem 1.75rem;
       border-bottom: 1px solid #26333a;
       color: #54f5a5;
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: 0.08em;
+    }
+
+    header a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header a:hover,
+    header a:focus-visible {
+      text-decoration: underline;
     }
 
     main {
@@ -46,12 +69,57 @@
       font-weight: 700;
       text-shadow: 0 0 18px rgb(84 245 165 / 25%);
     }
+
+    #qna {
+      width: min(100% - 2rem, 42rem);
+      margin: 0 auto;
+      padding: 2rem 0 4rem;
+    }
+
+    #qna h2 {
+      color: #54f5a5;
+    }
+
+    #qna details {
+      padding: 1rem 0;
+      border-bottom: 1px solid #26333a;
+    }
+
+    #qna summary {
+      cursor: pointer;
+      color: #54f5a5;
+      font-weight: 700;
+    }
+
+    #qna details p {
+      margin: 0.75rem 0 0;
+    }
   </style>
-</head>
+</head><title>Data Recovery Portal</title>
 <body>
-  <header>B4d H4xx0r Gr0up</header>
+  <aside class="site-notice">This site has been moved. If you believe this is an error contact the website administrator.</aside>
+  <header>
+    <span>B4d H4xx0r Gr0up</span>
+    <a href="#qna">QnA</a>
+  </header>
   <main>
-    <p>BHCTF{haxx0rs_hack4d_ag41n}</p>
+    <p>Welcome to the Data Recovery Portal</p>
+    <p1>BHCTF{haxx0rs_hack4d_ag41n}</p1>
   </main>
+  <section id="qna" aria-labelledby="qna-heading">
+    <h2 id="qna-heading">QnA</h2>
+    <details>
+      <summary>Why did you hack me?</summary>
+      <p>You fell for our trick.</p>
+    </details>
+    <details>
+      <summary>Can I get my data back?</summary>
+      <p>Maybe. For a price.</p>
+    </details>
+    <details>
+      <summary>Who are you?</summary>
+      <p>You'll never find out!</p>
+    </details>
+  </section>
 </body>
 </html>
