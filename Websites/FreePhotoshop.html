@@ -230,5 +230,12 @@
   </main>
   <footer class="download-note" id="download">
   </footer>
+  <script>
+    document.querySelector(".download-link").addEventListener("click", () => {
+      window.setTimeout(() => {
+        window.location.assign("notice.html");
+      }, 250);
+    });
+  </script>
 </body>
 </html>
